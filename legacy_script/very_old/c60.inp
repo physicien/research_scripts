@@ -1,0 +1,15 @@
+! B3LYP/G 6-311G* UseSym Opt TightSCF NumFreq
+# DFT functional:   B3LYP/G
+# Basis:            6-311G*
+%pal nprocs 8
+end
+#%base "b3lypOpt"
+%elprop Polar 1
+end
+%CPCM   Epsilon 2.568
+        REFRAC  1.5058
+end
+%TDDFT
+    Nroots 30
+end
+*xyzfile 0 1 SYM_c60.xyz

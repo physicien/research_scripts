@@ -1,0 +1,2 @@
+#solv_epsilon=4.450    # o-xyl 2.568  # 2-chlorotol 4.450    # c-hexane 2.020
+#solv_refrac=1.5268    # o-xyl 1.5058 # 2-chlorotol 1.5268   # c-hexane 1.4266

@@ -1,0 +1,29 @@
+# All atoms from diferent molecules will be at least 2.0 Angstroms apart
+tolerance 3.0
+
+# The type of the files will be pdb
+filetype pdb
+
+# The name of the output file
+output system.pdb
+
+# put the COM of the solute at the center of the box
+structure C60-Ih.pdb
+  number 1
+  fixed 5.0 12.5 12.5 0. 0. 0.
+  centerofmass
+end structure
+
+# add first type of solvent molecules
+structure o-xylene.pdb
+  number 50
+  inside cube 0. 0. 0. 25
+end structure
+
+# add second type of solvent molecules
+structure pyrene.pdb
+  number 1
+  fixed 20.0 12.5 12.5 1.57 0. 0.
+  centerofmass
+end structure
+
