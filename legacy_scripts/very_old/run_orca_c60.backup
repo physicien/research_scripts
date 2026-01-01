@@ -1,0 +1,66 @@
+#!/bin/bash
+#SBATCH --job-name=c60
+#SBATCH --account=def-cotemich
+#SBATCH --mail-type=END,FAIL            # Mail events (NONE, BEGIN, END, FAIL, ALL)
+#SBATCH --mail-user=your_email@mail.com
+##SBATCH --ntasks=32                     # cpus, if across several nodes
+##SBATCH --mem-per-cpu=2G                # memory, if across several nodes
+#SBATCH --nodes=1                       # nb of whole nodes
+#SBATCH --ntasks-per-node=64            # cpus, if whole node
+#SBATCH --mem=248G                      # memory, mem=0 for all memory of the node
+#SBATCH --time=00-24:00			# time (DD-HH:MM)
+#SBATCH --output=%x.log 		# output .log file
+##SBATCH --error=%x.err                  # error .err file
+#######################################
+# Job variables and settings:
+LAUNCHDIR=$PWD;
+XYZFILE=C60-Ih.xyz
+
+#Create a local working directory for the ORCA calculation
+WORKDIR=$LAUNCHDIR/$SLURM_JOB_NAME"_"$SLURM_JOB_ID
+mkdir -p $WORKDIR
+
+#Copy the input file to the local working directory
+cp $LAUNCHDIR/$SLURM_JOB_NAME.inp $WORKDIR/$SLURM_JOB_NAME.inp
+cp $LAUNCHDIR/$XYZFILE $WORKDIR/$XYZFILE
+
+#Change the number procs
+sed -i "/nprocs/ s/[0-9]\+/$SLURM_NTASKS/" $WORKDIR/$SLURM_JOB_NAME.inp
+
+cd $WORKDIR
+
+#Create the symetrization input file
+cat << EOF > SYM_$SLURM_JOB_NAME.inp
+! B3LYP/G 6-311G* NoIter XYZfile
+%pal nprocs $SLURM_NTASKS
+end
+%base "SYM_$SLURM_JOB_NAME"
+%sym SymThresh 1.0e-1
+end
+*xyzfile 0 1 $XYZFILE
+EOF
+
+#Start ORCA
+export RSH_COMMAND="/usr/bin/ssh -x"
+module load StdEnv/2020 gcc/10.3.0 openmpi/4.1.1
+module load orca/5.0.2
+
+d1=$(date +%s.%N);
+printf "\nJob execution start at: $(date --date=@$d1)\n"
+printf "Slurm Job ID is: $SLURM_JOB_ID\n\n"
+printf "Symmetrization of the structure..."
+$EBROOTORCA/orca "SYM_"$SLURM_JOB_NAME.inp > "SYM_"$SLURM_JOB_NAME.out
+d2=$(date +%s.%N);
+printf " Done\n"
+symTime=$(echo "scale=3; ($d2-$d1)/1" | bc -l);
+printf "The symmetrization took $symTime sec\n\n"
+$EBROOTORCA/orca $SLURM_JOB_NAME.inp --oversubscribe > $SLURM_JOB_NAME.out
+
+#Move the files to the local working directory 
+mv $LAUNCHDIR/$SLURM_JOB_NAME.log $WORKDIR
+#mv $LAUNCHDIR/$SLURM_JOB_NAME.err $WORKDIR
+
+d3=$(date +%s.%N);
+echo "Job finished at: $(date --date=@$d3)"
+
+exit 0
