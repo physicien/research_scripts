@@ -174,9 +174,6 @@ print_output_file() {
 load_orca() {
   local version="$1"
   local ml=$(module -t spi orca/$version | tail -n 1)
-#  module load StdEnv/2020 gcc/10.3.0 openmpi/4.1.1
-#  module load orca/5.0.4
-#  module load StdEnv/2023 gcc/12.3 openmpi/4.1.5
   module load $ml 2>/dev/null
   module load orca/$version 2>/dev/null
   export RSH_COMMAND="/usr/bin/ssh -x"
