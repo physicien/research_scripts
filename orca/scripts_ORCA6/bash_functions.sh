@@ -173,7 +173,7 @@ print_output_file() {
 # ORCA module load
 load_orca() {
   local version="$1"
-  local ml=$(module -r spi orca/$version | tail -n 1)
+  local ml=$(module -t spi orca/$version | tail -n 1)
 #  module load StdEnv/2020 gcc/10.3.0 openmpi/4.1.1
 #  module load orca/5.0.4
 #  module load StdEnv/2023 gcc/12.3 openmpi/4.1.5
