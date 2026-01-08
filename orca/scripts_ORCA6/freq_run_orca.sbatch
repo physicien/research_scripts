@@ -13,7 +13,7 @@
 #SBATCH --time=01-00:00		      # time (DD-HH:MM)
 #SBATCH --output=%x_%j.log 	      # output .log file
 ##SBATCH --error=%x_%j.err             # error .err file
-#SBATCH --signal=B:USR1@300           # send the SIGUR1 signal before the time limit
+##SBATCH --signal=B:USR1@300           # send USR1 signal before the time limit
 
 #######################################
 # Job variables and settings:
