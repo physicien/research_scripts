@@ -1,0 +1,188 @@
+Starting run at: (2024-05-17)  23:14:03
+
+
+Lmod a automatiquement remplacé "intel/2020.1.217" par "gcc/10.3.0"
+
+
+Dû à un changement dans la variable MODULEPATH, les modules suivants ont été rechargés :
+  1) ipykernel/2023b     2) mii/1.1.2     3) python/3.11.5     4) scipy-stack/2023b
+
+Les modules suivants ont été rechargés avec un changement de version :
+  1) StdEnv/2023 => StdEnv/2020
+  2) blis/0.9.0 => blis/0.8.1
+  3) flexiblas/3.3.1 => flexiblas/3.0.4
+  4) gcc/12.3 => gcc/10.3.0
+  5) gcccore/.12.3 => gcccore/.10.3.0
+  6) gentoo/2023 => gentoo/2020
+  7) hwloc/2.9.1 => hwloc/2.4.0
+  8) libfabric/1.18.0 => libfabric/1.12.1
+  9) openmpi/4.1.5 => openmpi/4.1.1
+ 10) pmix/4.2.4 => pmix/3.2.3
+ 11) ucx/1.14.1 => ucx/1.9.0
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 29110888
+Slurm Ntasks                : 64
+XYZ file                    : C78-D3h-4.xyz
+DFT functional              : B3LYP/G
+Dispersion correction       : 
+Basis set                   : def2-SVPD
+Initial basis set           : def2-SVP
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+
+--------------------------------------------------------------------------------
+                                 SYMMETRIZATION                                 
+--------------------------------------------------------------------------------
+Symmetrization of the structure                   ... done (  122.9 sec)
+
+This point group has been found:    D3h
+Largest non-degenerate subgroup:    C2v
+
+                                          Detailed output:  SYM_c78-D3h-4_E.out
+--------------------------------------------------------------------------------
+                                  GROUND STATE                                  
+--------------------------------------------------------------------------------
+Ground state energy calculation                   ... done ( 1371.6 sec)
+
+Reading the input file GS_c78-D3h-4_E.gbw               ... done
+Writing the output file GS_c78-D3h-4_E.molden.input     ... done
+
+Total Energy       :        -2970.12393821 Eh          -80821.18123 eV
+
+Components:
+Nuclear Repulsion  :        12569.84434996 Eh          342042.85388 eV
+Electronic Energy  :       -15539.96828817 Eh         -422864.03511 eV
+One Electron Energy:       -29064.99876095 Eh         -790898.82480 eV
+Two Electron Energy:        13525.03047278 Eh          368034.78969 eV
+Max COSX asymmetry :            0.00004886 Eh               0.00133 eV
+
+Virial components:
+Potential Energy   :        -5905.61612810 Eh         -160699.98468 eV
+Kinetic Energy     :         2935.49218989 Eh           79878.80345 eV
+Virial Ratio       :            2.01179760
+
+
+DFT components:
+N(Alpha)           :      233.999834907584 electrons
+N(Beta)            :      233.999834907584 electrons
+N(Total)           :      467.999669815169 electrons
+E(X)               :     -321.320734256768 Eh       
+E(C)               :      -21.086871205118 Eh       
+E(XC)              :     -342.407605461886 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  GS_c78-D3h-4_E.out
+--------------------------------------------------------------------------------
+                                  CATION STATE                                  
+--------------------------------------------------------------------------------
+Cation state energy calculation                   ... done ( 1655.4 sec)
+
+Reading the input file CA_c78-D3h-4_E.gbw               ... done
+Writing the output file CA_c78-D3h-4_E.molden.input     ... done
+
+Total Energy       :        -2969.86148036 Eh          -80814.03939 eV
+
+Components:
+Nuclear Repulsion  :        12569.84434996 Eh          342042.85388 eV
+Electronic Energy  :       -15539.70583032 Eh         -422856.89327 eV
+One Electron Energy:       -29016.49209111 Eh         -789578.89121 eV
+Two Electron Energy:        13476.78626080 Eh          366721.99794 eV
+Max COSX asymmetry :            0.00001223 Eh               0.00033 eV
+
+Virial components:
+Potential Energy   :        -5905.04664909 Eh         -160684.48836 eV
+Kinetic Energy     :         2935.18516873 Eh           79870.44898 eV
+Virial Ratio       :            2.01181401
+
+
+DFT components:
+N(Alpha)           :      233.999834427348 electrons
+N(Beta)            :      232.999831462708 electrons
+N(Total)           :      466.999665890057 electrons
+E(X)               :     -321.101287936152 Eh       
+E(C)               :      -21.047679608894 Eh       
+E(XC)              :     -342.148967545046 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  CA_c78-D3h-4_E.out
+--------------------------------------------------------------------------------
+                                  ANION STATE                                   
+--------------------------------------------------------------------------------
+Anion state energy calculation                    ... done ( 1785.5 sec)
+
+Reading the input file AN_c78-D3h-4_E.gbw               ... done
+Writing the output file AN_c78-D3h-4_E.molden.input     ... done
+
+Total Energy       :        -2970.22101327 Eh          -80823.82277 eV
+
+Components:
+Nuclear Repulsion  :        12569.84434996 Eh          342042.85388 eV
+Electronic Energy  :       -15540.06536322 Eh         -422866.67666 eV
+One Electron Energy:       -29112.82036603 Eh         -792200.11684 eV
+Two Electron Energy:        13572.75500281 Eh          369333.44018 eV
+Max COSX asymmetry :            0.00001225 Eh               0.00033 eV
+
+Virial components:
+Potential Energy   :        -5906.04813493 Eh         -160711.74018 eV
+Kinetic Energy     :         2935.82712166 Eh           79887.91740 eV
+Virial Ratio       :            2.01171523
+
+
+DFT components:
+N(Alpha)           :      234.999832090243 electrons
+N(Beta)            :      233.999836074841 electrons
+N(Total)           :      468.999668165084 electrons
+E(X)               :     -321.531323208913 Eh       
+E(C)               :      -21.124596577311 Eh       
+E(XC)              :     -342.655919786224 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  AN_c78-D3h-4_E.out
+--------------------------------------------------------------------------------
+                                 GLOBAL INDICES                                 
+--------------------------------------------------------------------------------
+HOMO= -6.0914 eV     LUMO= -3.6849 eV     gap= 2.4065 eV
+
+Ionization energy:                  7.1418 eV
+Electron affinity:                  2.6415 eV
+Mulliken electronegativity:         4.8917 eV
+Chemical potential:                -4.8917 eV
+Hardness:                           4.5003 eV
+Softness:                           0.2222 1/eV
+Electrophilicity index:             2.6586 eV
+Nucleophilicity index:              3.3844 eV
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polatizability calculation                        ... done ( 1768.0 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =  702.58598    a_yy =  702.60273    a_zz =  853.83501
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =  104.11414    a_yy =  104.11662    a_zz =  126.52729
+
+Isotropic polarizability:          111.586
+Anisotropic polarizability:         22.411
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X             Y             Z
+Electronic contribution:      0.00000      -0.00000       0.00007
+Nuclear contribution   :     -0.00000      -0.00000       0.00000
+                        -----------------------------------------
+Total Dipole Moment    :      0.00000      -0.00000       0.00007
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.00007
+Magnitude (Debye)      :      0.00018
+
+                                          Detailed output:  POL_c78-D3h-4_E.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2024-05-18)  01:05:55
+TOTAL RUN TIME: 0 days 1 hours 51 minutes 52 seconds 158 msec

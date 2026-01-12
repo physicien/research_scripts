@@ -1,0 +1,108 @@
+Starting run at: (2023-02-06)  14:38:54
+
+
+Lmod a automatiquement remplacé "intel/2020.1.217" par "gcc/10.3.0"
+
+
+Dû à un changement dans la variable MODULEPATH, les modules suivants ont été rechargés :
+  1) blis/0.8.1     2) flexiblas/3.0.4
+
+Les modules suivants ont été rechargés avec un changement de version :
+  1) gcccore/.9.3.0 => gcccore/.10.3.0        3) openmpi/4.0.3 => openmpi/4.1.1
+  2) libfabric/1.10.1 => libfabric/1.12.1     4) ucx/1.8.0 => ucx/1.9.0
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 13537615
+Slurm Ntasks                : 64
+XYZ file                    : OPT_c60-Ih.xyz
+DFT functional              : B3LYP/G
+Initial basis               : def2-SVP
+Basis                       : def2-SVPD
+Grid                        : DefGrid3
+
+--------------------------------------------------------------------------------
+                                 SYMMETRIZATION                                 
+--------------------------------------------------------------------------------
+Symmetrization of the structure                   ... done (   97.0 sec)
+
+This point group has been found:    Ih
+Largest non-degenerate subgroup:    D2h
+
+                                          Detailed output:  SYM_c60-Ih_m.out
+--------------------------------------------------------------------------------
+                             GEOMETRY OPTIMIZATION                              
+--------------------------------------------------------------------------------
+Geometry optimization                             ... done (  499.8 sec)
+
+Reading the input file OPT_c60-Ih_m.gbw               ... done
+Writing the output file OPT_c60-Ih_m.molden.input     ... done
+
+HOMO= -6.3245 eV     LUMO= -3.5924 eV     gap= 2.7321 eV
+
+Total Energy       :        -2284.53614639 Eh          -62165.38897 eV
+
+Components:
+Nuclear Repulsion  :         8315.40377980 Eh          226273.64038 eV
+Electronic Energy  :       -10599.93992620 Eh         -288439.02935 eV
+One Electron Energy:       -19651.20208871 Eh         -534736.39431 eV
+Two Electron Energy:         9051.26216251 Eh          246297.36496 eV
+Max COSX asymmetry :            0.00000371 Eh               0.00010 eV
+
+Virial components:
+Potential Energy   :        -4545.04322031 Eh         -123676.91364 eV
+Kinetic Energy     :         2260.50707392 Eh           61511.52467 eV
+Virial Ratio       :            2.01062995
+
+
+DFT components:
+N(Alpha)           :      179.999641759562 electrons
+N(Beta)            :      179.999641759562 electrons
+N(Total)           :      359.999283519125 electrons
+E(X)               :     -247.289621887438 Eh       
+E(C)               :      -16.213950071222 Eh       
+E(XC)              :     -263.503571958660 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  OPT_c60-Ih_m.out
+--------------------------------------------------------------------------------
+                               IONIZATION ENERGY                                
+--------------------------------------------------------------------------------
+Ionization energy calculation                     ... done (  551.5 sec)
+
+Ionization energy:                 7.52649 eV
+
+                                          Detailed output:  IO_c60-Ih_m.out
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polarizability calculation                        ... done ( 1189.7 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =  550.36956    a_yy =  550.37056    a_zz =  550.37122
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =   81.55764    a_yy =   81.55778    a_zz =   81.55788
+
+Average polarizability:             81.557
+Anisotropic polarizability:              0
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X             Y             Z
+Electronic contribution:     -0.00000      -0.00000       0.00002
+Nuclear contribution   :      0.00000       0.00000       0.00000
+                        -----------------------------------------
+Total Dipole Moment    :     -0.00000      -0.00000       0.00002
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.00002
+Magnitude (Debye)      :      0.00005
+
+                                          Detailed output:  POL_c60-Ih_m.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2023-02-06)  15:17:54
+TOTAL RUN TIME: 0 days 0 hours 39 minutes 0 seconds 342 msec

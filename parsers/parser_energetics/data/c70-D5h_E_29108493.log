@@ -1,0 +1,188 @@
+Starting run at: (2024-05-17)  20:08:02
+
+
+Lmod a automatiquement remplacé "intel/2020.1.217" par "gcc/10.3.0"
+
+
+Dû à un changement dans la variable MODULEPATH, les modules suivants ont été rechargés :
+  1) mii/1.1.2
+
+Les modules suivants ont été rechargés avec un changement de version :
+  1) StdEnv/2023 => StdEnv/2020
+  2) blis/0.9.0 => blis/0.8.1
+  3) flexiblas/3.3.1 => flexiblas/3.0.4
+  4) gcc/12.3 => gcc/10.3.0
+  5) gcccore/.12.3 => gcccore/.10.3.0
+  6) gentoo/2023 => gentoo/2020
+  7) hwloc/2.9.1 => hwloc/2.4.0
+  8) libfabric/1.18.0 => libfabric/1.12.1
+  9) openmpi/4.1.5 => openmpi/4.1.1
+ 10) pmix/4.2.4 => pmix/3.2.3
+ 11) ucx/1.14.1 => ucx/1.9.0
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 29108493
+Slurm Ntasks                : 64
+XYZ file                    : C70-D5h.xyz
+DFT functional              : B3LYP/G
+Dispersion correction       : 
+Basis set                   : def2-SVPD
+Initial basis set           : def2-SVP
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+
+--------------------------------------------------------------------------------
+                                 SYMMETRIZATION                                 
+--------------------------------------------------------------------------------
+Symmetrization of the structure                   ... done (  141.5 sec)
+
+This point group has been found:    D5h
+Largest non-degenerate subgroup:    C2v
+
+                                          Detailed output:  SYM_c70-D5h_E.out
+--------------------------------------------------------------------------------
+                                  GROUND STATE                                  
+--------------------------------------------------------------------------------
+Ground state energy calculation                   ... done ( 1379.9 sec)
+
+Reading the input file GS_c70-D5h_E.gbw               ... done
+Writing the output file GS_c70-D5h_E.molden.input     ... done
+
+Total Energy       :        -2665.48823228 Eh          -72531.62224 eV
+
+Components:
+Nuclear Repulsion  :        10605.84550819 Eh          288599.72840 eV
+Electronic Energy  :       -13271.33374047 Eh         -361131.35064 eV
+One Electron Energy:       -24734.19302505 Eh         -673051.60949 eV
+Two Electron Energy:        11462.85928459 Eh          311920.25885 eV
+Max COSX asymmetry :            0.00004783 Eh               0.00130 eV
+
+Virial components:
+Potential Energy   :        -5299.95345758 Eh         -144219.06554 eV
+Kinetic Energy     :         2634.46522530 Eh           71687.44330 eV
+Virial Ratio       :            2.01177583
+
+
+DFT components:
+N(Alpha)           :      209.999938132946 electrons
+N(Beta)            :      209.999938132946 electrons
+N(Total)           :      419.999876265892 electrons
+E(X)               :     -288.365045469458 Eh       
+E(C)               :      -18.922981932065 Eh       
+E(XC)              :     -307.288027401523 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  GS_c70-D5h_E.out
+--------------------------------------------------------------------------------
+                                  CATION STATE                                  
+--------------------------------------------------------------------------------
+Cation state energy calculation                   ... done ( 1661.4 sec)
+
+Reading the input file CA_c70-D5h_E.gbw               ... done
+Writing the output file CA_c70-D5h_E.molden.input     ... done
+
+Total Energy       :        -2665.21412501 Eh          -72524.16340 eV
+
+Components:
+Nuclear Repulsion  :        10605.84550819 Eh          288599.72840 eV
+Electronic Energy  :       -13271.05963320 Eh         -361123.89180 eV
+One Electron Energy:       -24688.68384605 Eh         -671813.24178 eV
+Two Electron Energy:        11417.62421285 Eh          310689.34997 eV
+Max COSX asymmetry :            0.00001193 Eh               0.00032 eV
+
+Virial components:
+Potential Energy   :        -5299.40177813 Eh         -144204.05358 eV
+Kinetic Energy     :         2634.18765312 Eh           71679.89018 eV
+Virial Ratio       :            2.01177838
+
+
+DFT components:
+N(Alpha)           :      209.999936137912 electrons
+N(Beta)            :      208.999937131990 electrons
+N(Total)           :      418.999873269902 electrons
+E(X)               :     -288.149396839340 Eh       
+E(C)               :      -18.883753865674 Eh       
+E(XC)              :     -307.033150705014 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  CA_c70-D5h_E.out
+--------------------------------------------------------------------------------
+                                  ANION STATE                                   
+--------------------------------------------------------------------------------
+Anion state energy calculation                    ... done ( 1498.9 sec)
+
+Reading the input file AN_c70-D5h_E.gbw               ... done
+Writing the output file AN_c70-D5h_E.molden.input     ... done
+
+Total Energy       :        -2665.58518443 Eh          -72534.26044 eV
+
+Components:
+Nuclear Repulsion  :        10605.84550819 Eh          288599.72840 eV
+Electronic Energy  :       -13271.43069262 Eh         -361133.98884 eV
+One Electron Energy:       -24779.07600831 Eh         -674272.93756 eV
+Two Electron Energy:        11507.64531569 Eh          313138.94872 eV
+Max COSX asymmetry :            0.00001201 Eh               0.00033 eV
+
+Virial components:
+Potential Energy   :        -5300.39310262 Eh         -144231.02889 eV
+Kinetic Energy     :         2634.80791819 Eh           71696.76845 eV
+Virial Ratio       :            2.01168103
+
+
+DFT components:
+N(Alpha)           :      210.999941076306 electrons
+N(Beta)            :      209.999938622330 electrons
+N(Total)           :      420.999879698636 electrons
+E(X)               :     -288.577484588436 Eh       
+E(C)               :      -18.960528905014 Eh       
+E(XC)              :     -307.538013493450 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  AN_c70-D5h_E.out
+--------------------------------------------------------------------------------
+                                 GLOBAL INDICES                                 
+--------------------------------------------------------------------------------
+HOMO= -6.3668 eV     LUMO= -3.7213 eV     gap= 2.6455 eV
+
+Ionization energy:                  7.4588 eV
+Electron affinity:                  2.6382 eV
+Mulliken electronegativity:         5.0485 eV
+Chemical potential:                -5.0485 eV
+Hardness:                           4.8206 eV
+Softness:                           0.2074 1/eV
+Electrophilicity index:             2.6436 eV
+Nucleophilicity index:              3.1090 eV
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polatizability calculation                        ... done ( 1485.1 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =  658.22890    a_yy =  658.27357    a_zz =  726.59926
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =   97.54099    a_yy =   97.54761    a_zz =  107.67260
+
+Isotropic polarizability:          100.920
+Anisotropic polarizability:         10.128
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X             Y             Z
+Electronic contribution:      0.00000      -0.00001       0.00029
+Nuclear contribution   :     -0.00000       0.00000      -0.00000
+                        -----------------------------------------
+Total Dipole Moment    :      0.00000      -0.00001       0.00029
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.00029
+Magnitude (Debye)      :      0.00075
+
+                                          Detailed output:  POL_c70-D5h_E.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2024-05-17)  21:50:56
+TOTAL RUN TIME: 0 days 1 hours 42 minutes 54 seconds 106 msec

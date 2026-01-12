@@ -1,0 +1,54 @@
+Starting run at: (2025-11-07)  12:44:44
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 3872716
+Slurm Ntasks                : 32
+XYZ file                    : C60-Ih.xyz
+DFT functional              : CAM-B3LYP
+Basis set                   : def2-TZVPPD
+Initial basis set           : def2-TZVPP
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+EV overlap threshold        : 1e-7
+Imaginary frequency         : 0.00
+Charge                      : 0
+Multiplicity                : 1
+Use Symmetry                : false
+
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polarizability calculation                        ... done (21455.7 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =   535.86736    a_yy =   535.87330    a_zz =   535.87860
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =    79.40860    a_yy =    79.40948    a_zz =    79.41026
+
+Isotropic polarizability:           79.409
+Anisotropic polarizability:          0.000
+
+-------------
+DIPOLE MOMENT
+-------------
+---------------------
+ATOMIC DIPOLE MOMENTS
+---------------------
+                                X                 Y                 Z
+Electronic contribution:     -0.000050335       0.000010674       0.000074099
+Nuclear contribution   :      0.000000000      -0.000000000       0.000000000
+                        -----------------------------------------
+Total Dipole Moment    :     -0.000050335       0.000010674       0.000074099
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.000090212
+Magnitude (Debye)      :      0.000229301
+
+                                          Detailed output:  POL_c60-Ih_p.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2025-11-07)  18:42:20
+TOTAL RUN TIME: 0 days 5 hours 57 minutes 36 seconds 676 msec

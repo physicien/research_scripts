@@ -1,0 +1,110 @@
+Starting run at: (2023-03-29)  00:11:24
+
+
+Lmod a automatiquement remplacé "intel/2020.1.217" par "gcc/10.3.0"
+
+
+Dû à un changement dans la variable MODULEPATH, les modules suivants ont été rechargés :
+  1) blis/0.8.1     2) flexiblas/3.0.4
+
+Les modules suivants ont été rechargés avec un changement de version :
+  1) gcccore/.9.3.0 => gcccore/.10.3.0        3) openmpi/4.0.3 => openmpi/4.1.1
+  2) libfabric/1.10.1 => libfabric/1.12.1     4) ucx/1.8.0 => ucx/1.9.0
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 15083781
+Slurm Ntasks                : 64
+XYZ file                    : C8H10.xyz
+DFT functional              : B3LYP/G
+Initial basis               : def2-SVP
+Basis                       : def2-SVPD
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+Opt level                   : TightOpt
+
+--------------------------------------------------------------------------------
+                                 SYMMETRIZATION                                 
+--------------------------------------------------------------------------------
+Symmetrization of the structure                   ... done (    6.6 sec)
+
+This point group has been found:    C2v
+Largest non-degenerate subgroup:    C2v
+
+                                          Detailed output:  SYM_C8H10_m.out
+--------------------------------------------------------------------------------
+                             GEOMETRY OPTIMIZATION                              
+--------------------------------------------------------------------------------
+Geometry optimization                             ... done (   46.3 sec)
+
+Reading the input file OPT_C8H10_m.gbw               ... done
+Writing the output file OPT_C8H10_m.molden.input     ... done
+
+HOMO= -6.4626 eV     LUMO= -0.0958 eV     gap= 6.3668 eV
+
+Total Energy       :         -310.66227103 Eh           -8453.55016 eV
+
+Components:
+Nuclear Repulsion  :          344.13672374 Eh            9364.43633 eV
+Electronic Energy  :         -654.79899477 Eh          -17817.98650 eV
+One Electron Energy:        -1098.86134142 Eh          -29901.53726 eV
+Two Electron Energy:          444.06234665 Eh           12083.55077 eV
+Max COSX asymmetry :            0.00000060 Eh               0.00002 eV
+
+Virial components:
+Potential Energy   :         -617.52119722 Eh          -16803.60606 eV
+Kinetic Energy     :          306.85892619 Eh            8350.05589 eV
+Virial Ratio       :            2.01239444
+
+
+DFT components:
+N(Alpha)           :       29.000001185188 electrons
+N(Beta)            :       29.000001185188 electrons
+N(Total)           :       58.000002370376 electrons
+E(X)               :      -35.629752021882 Eh       
+E(C)               :       -2.453643093343 Eh       
+E(XC)              :      -38.083395115226 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  OPT_C8H10_m.out
+--------------------------------------------------------------------------------
+                               IONIZATION ENERGY                                
+--------------------------------------------------------------------------------
+Ionization energy calculation                     ... done (   62.3 sec)
+
+Ionization energy:                 8.49900 eV
+
+                                          Detailed output:  IO_C8H10_m.out
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polarizability calculation                        ... done (   91.2 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =   61.24132    a_yy =  105.82166    a_zz =  117.97122
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =    9.07517    a_yy =   15.68139    a_zz =   17.48180
+
+Isotropic polarizability:           14.079
+Anisotropic polarizability:          7.666
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X             Y             Z
+Electronic contribution:     -0.00003       0.00001      -5.35166
+Nuclear contribution   :      0.00000       0.00000       5.60760
+                        -----------------------------------------
+Total Dipole Moment    :     -0.00003       0.00001       0.25594
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.25594
+Magnitude (Debye)      :      0.65055
+
+                                          Detailed output:  POL_C8H10_m.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2023-03-29)  00:14:52
+TOTAL RUN TIME: 0 days 0 hours 3 minutes 28 seconds 239 msec

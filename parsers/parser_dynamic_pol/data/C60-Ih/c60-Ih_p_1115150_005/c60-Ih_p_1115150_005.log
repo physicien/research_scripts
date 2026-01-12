@@ -1,0 +1,49 @@
+Starting run at: (2025-08-15)  10:54:18
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 1115150
+Slurm Ntasks                : 30
+XYZ file                    : C60-Ih.xyz
+DFT functional              : B3LYP/G
+Basis set                   : def2-SVPD
+Initial basis set           : def2-SVPD
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+EV overlap threshold        : 1e-7
+Imaginary frequency         : 0.16
+Use Symmetry                : true
+
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polarizability calculation                        ... done (  458.1 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =   447.22529    a_yy =   447.22588    a_zz =   447.22616
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =    66.27299    a_yy =    66.27308    a_zz =    66.27312
+
+Isotropic polarizability:           66.273
+Anisotropic polarizability:          0.000
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X                 Y                 Z
+Electronic contribution:     -0.000002923       0.000008912      -0.000005425
+Nuclear contribution   :     -0.000000000       0.000000000       0.000000000
+                        -----------------------------------------
+Total Dipole Moment    :     -0.000002923       0.000008912      -0.000005425
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.000010835
+Magnitude (Debye)      :      0.000027541
+
+                                          Detailed output:  POL_c60-Ih_p-005.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2025-08-15)  11:01:57
+TOTAL RUN TIME: 0 days 0 hours 7 minutes 39 seconds 241 msec

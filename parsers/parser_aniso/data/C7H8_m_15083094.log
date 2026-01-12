@@ -1,0 +1,110 @@
+Starting run at: (2023-03-29)  00:05:06
+
+
+Lmod a automatiquement remplacé "intel/2020.1.217" par "gcc/10.3.0"
+
+
+Dû à un changement dans la variable MODULEPATH, les modules suivants ont été rechargés :
+  1) blis/0.8.1     2) flexiblas/3.0.4
+
+Les modules suivants ont été rechargés avec un changement de version :
+  1) gcccore/.9.3.0 => gcccore/.10.3.0        3) openmpi/4.0.3 => openmpi/4.1.1
+  2) libfabric/1.10.1 => libfabric/1.12.1     4) ucx/1.8.0 => ucx/1.9.0
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 15083094
+Slurm Ntasks                : 64
+XYZ file                    : C7H8.xyz
+DFT functional              : B3LYP/G
+Initial basis               : def2-SVP
+Basis                       : def2-SVPD
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+Opt level                   : TightOpt
+
+--------------------------------------------------------------------------------
+                                 SYMMETRIZATION                                 
+--------------------------------------------------------------------------------
+Symmetrization of the structure                   ... done (    7.2 sec)
+
+This point group has been found:    Cs
+Largest non-degenerate subgroup:    Cs
+
+                                          Detailed output:  SYM_C7H8_m.out
+--------------------------------------------------------------------------------
+                             GEOMETRY OPTIMIZATION                              
+--------------------------------------------------------------------------------
+Geometry optimization                             ... done (   41.5 sec)
+
+Reading the input file OPT_C7H8_m.gbw               ... done
+Writing the output file OPT_C7H8_m.molden.input     ... done
+
+HOMO= -6.6393 eV     LUMO= -0.1909 eV     gap= 6.4484 eV
+
+Total Energy       :         -271.37376909 Eh           -7384.45568 eV
+
+Components:
+Nuclear Repulsion  :          268.09472491 Eh            7295.22835 eV
+Electronic Energy  :         -539.46849400 Eh          -14679.68402 eV
+One Electron Energy:         -894.96871792 Eh          -24353.33691 eV
+Two Electron Energy:          355.50022392 Eh            9673.65289 eV
+Max COSX asymmetry :            0.00000075 Eh               0.00002 eV
+
+Virial components:
+Potential Energy   :         -539.46329347 Eh          -14679.54251 eV
+Kinetic Energy     :          268.08952438 Eh            7295.08683 eV
+Virial Ratio       :            2.01225055
+
+
+DFT components:
+N(Alpha)           :       25.000002105689 electrons
+N(Beta)            :       25.000002105689 electrons
+N(Total)           :       50.000004211379 electrons
+E(X)               :      -30.966535870277 Eh       
+E(C)               :       -2.119391610382 Eh       
+E(XC)              :      -33.085927480659 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  OPT_C7H8_m.out
+--------------------------------------------------------------------------------
+                               IONIZATION ENERGY                                
+--------------------------------------------------------------------------------
+Ionization energy calculation                     ... done (   51.8 sec)
+
+Ionization energy:                 8.76986 eV
+
+                                          Detailed output:  IO_C7H8_m.out
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polarizability calculation                        ... done (   74.3 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =   52.40985    a_yy =   89.66797    a_zz =  103.88374
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =    7.76646    a_yy =   13.28763    a_zz =   15.39422
+
+Isotropic polarizability:           12.149
+Anisotropic polarizability:          6.822
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X             Y             Z
+Electronic contribution:     -3.39134       0.04545      -0.00001
+Nuclear contribution   :      3.54100      -0.06048       0.00000
+                        -----------------------------------------
+Total Dipole Moment    :      0.14966      -0.01502      -0.00001
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.15041
+Magnitude (Debye)      :      0.38231
+
+                                          Detailed output:  POL_C7H8_m.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2023-03-29)  00:08:02
+TOTAL RUN TIME: 0 days 0 hours 2 minutes 56 seconds 484 msec

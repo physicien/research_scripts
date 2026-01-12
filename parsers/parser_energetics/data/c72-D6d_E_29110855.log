@@ -1,0 +1,188 @@
+Starting run at: (2024-05-17)  22:20:41
+
+
+Lmod a automatiquement remplacé "intel/2020.1.217" par "gcc/10.3.0"
+
+
+Dû à un changement dans la variable MODULEPATH, les modules suivants ont été rechargés :
+  1) ipykernel/2023b     2) mii/1.1.2     3) python/3.11.5     4) scipy-stack/2023b
+
+Les modules suivants ont été rechargés avec un changement de version :
+  1) StdEnv/2023 => StdEnv/2020
+  2) blis/0.9.0 => blis/0.8.1
+  3) flexiblas/3.3.1 => flexiblas/3.0.4
+  4) gcc/12.3 => gcc/10.3.0
+  5) gcccore/.12.3 => gcccore/.10.3.0
+  6) gentoo/2023 => gentoo/2020
+  7) hwloc/2.9.1 => hwloc/2.4.0
+  8) libfabric/1.18.0 => libfabric/1.12.1
+  9) openmpi/4.1.5 => openmpi/4.1.1
+ 10) pmix/4.2.4 => pmix/3.2.3
+ 11) ucx/1.14.1 => ucx/1.9.0
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 29110855
+Slurm Ntasks                : 64
+XYZ file                    : C72-D6d.xyz
+DFT functional              : B3LYP/G
+Dispersion correction       : 
+Basis set                   : def2-SVPD
+Initial basis set           : def2-SVP
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+
+--------------------------------------------------------------------------------
+                                 SYMMETRIZATION                                 
+--------------------------------------------------------------------------------
+Symmetrization of the structure                   ... done (  128.0 sec)
+
+This point group has been found:    D6d
+Largest non-degenerate subgroup:    D2
+
+                                          Detailed output:  SYM_c72-D6d_E.out
+--------------------------------------------------------------------------------
+                                  GROUND STATE                                  
+--------------------------------------------------------------------------------
+Ground state energy calculation                   ... done ( 1223.6 sec)
+
+Reading the input file GS_c72-D6d_E.gbw               ... done
+Writing the output file GS_c72-D6d_E.molden.input     ... done
+
+Total Energy       :        -2741.60078896 Eh          -74602.75020 eV
+
+Components:
+Nuclear Repulsion  :        11091.66184999 Eh          301819.46314 eV
+Electronic Energy  :       -13833.26263895 Eh         -376422.21334 eV
+One Electron Energy:       -25806.51232619 Eh         -702230.90112 eV
+Two Electron Energy:        11973.24968724 Eh          325808.68778 eV
+Max COSX asymmetry :            0.00001853 Eh               0.00050 eV
+
+Virial components:
+Potential Energy   :        -5451.24632012 Eh         -148335.95362 eV
+Kinetic Energy     :         2709.64553115 Eh           73733.20343 eV
+Virial Ratio       :            2.01179315
+
+
+DFT components:
+N(Alpha)           :      215.999829556878 electrons
+N(Beta)            :      215.999829556878 electrons
+N(Total)           :      431.999659113756 electrons
+E(X)               :     -296.583531172248 Eh       
+E(C)               :      -19.462691271557 Eh       
+E(XC)              :     -316.046222443805 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  GS_c72-D6d_E.out
+--------------------------------------------------------------------------------
+                                  CATION STATE                                  
+--------------------------------------------------------------------------------
+Cation state energy calculation                   ... done ( 1578.6 sec)
+
+Reading the input file CA_c72-D6d_E.gbw               ... done
+Writing the output file CA_c72-D6d_E.molden.input     ... done
+
+Total Energy       :        -2741.33104559 Eh          -74595.41011 eV
+
+Components:
+Nuclear Repulsion  :        11091.66184999 Eh          301819.46314 eV
+Electronic Energy  :       -13832.99289557 Eh         -376414.87325 eV
+One Electron Energy:       -25760.20449059 Eh         -700970.80086 eV
+Two Electron Energy:        11927.21159502 Eh          324555.92760 eV
+Max COSX asymmetry :            0.00000464 Eh               0.00013 eV
+
+Virial components:
+Potential Energy   :        -5450.68250403 Eh         -148320.61141 eV
+Kinetic Energy     :         2709.35145845 Eh           73725.20130 eV
+Virial Ratio       :            2.01180341
+
+
+DFT components:
+N(Alpha)           :      215.999826203583 electrons
+N(Beta)            :      214.999824153941 electrons
+N(Total)           :      430.999650357524 electrons
+E(X)               :     -296.365832791796 Eh       
+E(C)               :      -19.423683449990 Eh       
+E(XC)              :     -315.789516241786 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  CA_c72-D6d_E.out
+--------------------------------------------------------------------------------
+                                  ANION STATE                                   
+--------------------------------------------------------------------------------
+Anion state energy calculation                    ... done ( 1536.5 sec)
+
+Reading the input file AN_c72-D6d_E.gbw               ... done
+Writing the output file AN_c72-D6d_E.molden.input     ... done
+
+Total Energy       :        -2741.70144177 Eh          -74605.48910 eV
+
+Components:
+Nuclear Repulsion  :        11091.66184999 Eh          301819.46314 eV
+Electronic Energy  :       -13833.36329175 Eh         -376424.95224 eV
+One Electron Energy:       -25851.98556340 Eh         -703468.29082 eV
+Two Electron Energy:        12018.62227165 Eh          327043.33857 eV
+Max COSX asymmetry :            0.00000462 Eh               0.00013 eV
+
+Virial components:
+Potential Energy   :        -5451.67323738 Eh         -148347.57063 eV
+Kinetic Energy     :         2709.97179562 Eh           73742.08153 eV
+Virial Ratio       :            2.01170848
+
+
+DFT components:
+N(Alpha)           :      216.999838977045 electrons
+N(Beta)            :      215.999834602589 electrons
+N(Total)           :      432.999673579634 electrons
+E(X)               :     -296.792562405732 Eh       
+E(C)               :      -19.500276564514 Eh       
+E(XC)              :     -316.292838970246 Eh       
+DFET-embed. en.    :        0.000000000000 Eh       
+
+                                          Detailed output:  AN_c72-D6d_E.out
+--------------------------------------------------------------------------------
+                                 GLOBAL INDICES                                 
+--------------------------------------------------------------------------------
+HOMO= -6.2540 eV     LUMO= -3.8138 eV     gap= 2.4402 eV
+
+Ionization energy:                  7.3401 eV
+Electron affinity:                  2.7389 eV
+Mulliken electronegativity:         5.0395 eV
+Chemical potential:                -5.0395 eV
+Hardness:                           4.6012 eV
+Softness:                           0.2173 1/eV
+Electrophilicity index:             2.7598 eV
+Nucleophilicity index:              3.2218 eV
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polatizability calculation                        ... done ( 1550.8 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =  583.10143    a_yy =  739.75795    a_zz =  739.75854
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =   86.40808    a_yy =  109.62254    a_zz =  109.62263
+
+Isotropic polarizability:          101.884
+Anisotropic polarizability:         23.214
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X             Y             Z
+Electronic contribution:     -0.00001       0.00000       0.00001
+Nuclear contribution   :      0.00000       0.00000       0.00000
+                        -----------------------------------------
+Total Dipole Moment    :     -0.00001       0.00000       0.00001
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.00001
+Magnitude (Debye)      :      0.00002
+
+                                          Detailed output:  POL_c72-D6d_E.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2024-05-18)  00:01:08
+TOTAL RUN TIME: 0 days 1 hours 40 minutes 27 seconds 467 msec

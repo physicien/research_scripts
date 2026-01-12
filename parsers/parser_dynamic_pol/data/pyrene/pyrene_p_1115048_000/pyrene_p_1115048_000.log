@@ -1,0 +1,49 @@
+Starting run at: (2025-08-15)  10:42:05
+
+To execute ORCA, run: 
+   ${EBROOTORCA}/orca orca.inp > orca.out
+--------------------------------------------------------------------------------
+                                     INPUT                                      
+--------------------------------------------------------------------------------
+Slurm Job ID                : 1115064
+Slurm Ntasks                : 10
+XYZ file                    : pyrene.xyz
+DFT functional              : B3LYP/G
+Basis set                   : def2-SVPD
+Initial basis set           : def2-SVPD
+Grid                        : DefGrid3
+SCF level                   : TightSCF
+EV overlap threshold        : 1e-7
+Imaginary frequency         : 0.00
+Use Symmetry                : true
+
+--------------------------------------------------------------------------------
+                                 POLARIZABILITY                                 
+--------------------------------------------------------------------------------
+Polarizability calculation                        ... done (   57.5 sec)
+
+Diagonalized polarizability tensor (bohr^3):
+  a_xx =    90.41847    a_yy =   212.24957    a_zz =   294.60694
+
+Diagonalized polarizability tensor (ang^3):
+  a_xx =    13.39884    a_yy =    31.45263    a_zz =    43.65693
+
+Isotropic polarizability:           29.502
+Anisotropic polarizability:         26.366
+
+-------------
+DIPOLE MOMENT
+-------------
+                                X                 Y                 Z
+Electronic contribution:     -0.000000000       0.000000000      -0.000000000
+Nuclear contribution   :      0.000000000       0.000000000       0.000000000
+                        -----------------------------------------
+Total Dipole Moment    :      0.000000000       0.000000000      -0.000000000
+                        -----------------------------------------
+Magnitude (a.u.)       :      0.000000000
+Magnitude (Debye)      :      0.000000000
+
+                                          Detailed output:  POL_pyrene_p-000.out
+--------------------------------------------------------------------------------
+Program finished with exit code 0 at: (2025-08-15)  10:43:03
+TOTAL RUN TIME: 0 days 0 hours 0 minutes 58 seconds 438 msec
