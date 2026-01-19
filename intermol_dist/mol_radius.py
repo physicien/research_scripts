@@ -45,7 +45,7 @@ args = parser.parse_args()
 
 #Data processing
 path = args.filename
-df = pd.read_table(path,skiprows=2,delim_whitespace=True,names=headers)
+df = pd.read_table(path,skiprows=2,sep="\s+",names=headers)
 
 ful_radius = shortest_dist(df)
 max_radius = longest_dist(df)

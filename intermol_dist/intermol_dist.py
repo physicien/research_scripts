@@ -36,7 +36,7 @@ args = parser.parse_args()
 
 #Data processing
 path = args.filename
-df = pd.read_table(path,skiprows=2,delim_whitespace=True,names=headers)
+df = pd.read_table(path,skiprows=2,sep="\s+",names=headers)
 row_C = df[df["atom"]=="C"].index.to_numpy()
 mol_rows=[list(map(itemgetter(1),g)) for k, g in groupby(enumerate(row_C), \
         lambda i_x: i_x[0] - i_x[1])]
