@@ -34,6 +34,18 @@ def anisotropy(df):
     yz=df["ayz"]
     return 3*(xy**2+xz**2+yz**2)+0.5*((xx-yy)**2+(xx-zz)**2+(yy-zz)**2)
 
+def label_pol(idx):
+    return "a" + idx + idx
+
+def para_pol(df,idx):
+    label = label_pol(idx)
+    return df[label]
+
+def perp_pol(df,idx):
+    label = label_pol(idx)
+    perp = df[["axx","ayy","azz"]].drop(label)
+    return perp.mean()
+
 #create parser
 parser = argparse.ArgumentParser(prog='data_parser',\
     description='Parse data from all .log files to easily plot')
@@ -70,25 +82,47 @@ for index,path in enumerate(args.filename):
     df_dip = pd.DataFrame(atom.atom_dip, columns=header_dip)
     df_pol = pd.DataFrame(atom.atom_pol, columns=header_pol)
     df_atoms = pd.concat([df_xyz,df_dip,df_pol],axis=1)
-    
+
     df_atoms["iso_pol"]=df_atoms.apply(iso_pol, axis=1)
     df_atoms["anisotropy"]=df_atoms.apply(anisotropy, axis=1)
 
+    idx_para = df_atoms[["x","y","z"]].abs().max().idxmax()
+    df_atoms["para_pol"]=df_atoms.apply(para_pol, axis=1, idx=idx_para)
+    df_atoms["perp_pol"]=df_atoms.apply(perp_pol, axis=1, idx=idx_para)
+    
     col_iso = ["element","x","y","z","iso_pol"]
     col_aniso = ["element","x","y","z","anisotropy"]
+    col_para = ["element","x","y","z","para_pol"]
+    col_perp = ["element","x","y","z","perp_pol"]
     col_w = [3,18,18,18,18]
     fname_iso = str(mol.molecule) + "_iso.chg"
     fname_aniso = str(mol.molecule) + "_aniso.chg"
+    fname_para = str(mol.molecule) + "_para.chg"
+    fname_perp = str(mol.molecule) + "_perp.chg"
+
     iso_string = df_atoms.to_string(columns=col_iso,col_space=col_w,
                                     header=None,index=None,
                                     float_format='%10.10f')
     with open(fname_iso, "w") as text_file:
         text_file.write(iso_string)
+
     aniso_string = df_atoms.to_string(columns=col_aniso,col_space=col_w,
                                     header=None,index=None,
                                     float_format='%10.10f')
     with open(fname_aniso, "w") as text_file:
         text_file.write(aniso_string)
+
+    para_string = df_atoms.to_string(columns=col_para,col_space=col_w,
+                                    header=None,index=None,
+                                    float_format='%10.10f')
+    with open(fname_para, "w") as text_file:
+        text_file.write(para_string)
+
+    perp_string = df_atoms.to_string(columns=col_perp,col_space=col_w,
+                                    header=None,index=None,
+                                    float_format='%10.10f')
+    with open(fname_perp, "w") as text_file:
+        text_file.write(perp_string)
 #    print(df_atoms["iso_pol"].apply(bohr_to_ang))
 
 #df = pd.DataFrame(data_list)
