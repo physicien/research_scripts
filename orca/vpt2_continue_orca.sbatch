@@ -59,7 +59,7 @@ cp "$(readlink -f $0)" "$WORKDIR"
 cp $LAUNCHDIR/$BASHFCT $WORKDIR
 cp $CONTINUEDIR/$OPT_NAME* $WORKDIR
 cp $CONTINUEDIR/$VPT2_NAME*.hess $WORKDIR
-vpt2_unfinished_delete $CONTINUEDIR $WORKDIR
+#vpt2_unfinished_delete $CONTINUEDIR $WORKDIR   # WHAT IS THAT EXACTLY???
 
 cd $WORKDIR
 
