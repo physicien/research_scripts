@@ -1,0 +1,68 @@
+2022-06-16:11:57:50EDT * 0 * information * 0x2f44080 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-16:11:57:50EDT * 1 * information * 0x2f44080 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-16:11:57:50EDT * 0 * information * 0x2f44080 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-16:11:57:50EDT * 0 * information * 0x2f49f20 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-16:11:57:50EDT * 1 * information * 0x2f49f20 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0x2f44080_Collections'.
+2022-06-16:11:57:50EDT * 2 * information * 0x2f44080_Collections * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0x2f49f20'.
+2022-06-16:11:57:50EDT * 1 * warning * 0x2f44080 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(0, 0x7ffcb1301db0). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-16:11:57:50EDT * 2 * warning * 0x2f44080 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(1, 0x7ffcb1301db0). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-16:11:57:50EDT * 3 * error * 0x2f44080 * KIM_SharedLibrary.cpp:348 * SharedLibrary not open.
+2022-06-16:11:57:50EDT * 3 * information * 0x2f44080_Collections * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-16:11:57:50EDT * 0 * information * 0x2af09a0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-16:11:57:50EDT * 1 * information * 0x2af09a0 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0x2f44080_0x2af09a0'.
+2022-06-16:11:57:50EDT * 2 * information * 0x2f44080_0x2af09a0 * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0x2af09a0'.
+2022-06-16:11:57:50EDT * 3 * information * 0x2f44080_0x2af09a0 * ANNImplementation.cpp:970 * Register argument supportStatus
+2022-06-16:11:57:50EDT * 4 * information * 0x2f44080_0x2af09a0 * ANNImplementation.cpp:989 * Register callback supportStatus
+2022-06-16:11:57:54EDT * 0 * information * 0x2f44080_0x2af09a0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-16:11:57:54EDT * 0 * information * 0x2f44080 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:13:04EDT * 0 * information * 0x298d4e0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:13:04EDT * 1 * information * 0x298d4e0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:13:04EDT * 0 * information * 0x298d4e0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:13:04EDT * 0 * information * 0x298e5d0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:13:04EDT * 1 * information * 0x298e5d0 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0x298d4e0_Collections'.
+2022-06-23:11:13:04EDT * 2 * information * 0x298d4e0_Collections * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0x298e5d0'.
+2022-06-23:11:13:04EDT * 1 * warning * 0x298d4e0 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(0, 0x7ffd29f60cd0). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-23:11:13:04EDT * 2 * warning * 0x298d4e0 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(1, 0x7ffd29f60cd0). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-23:11:13:04EDT * 3 * error * 0x298d4e0 * KIM_SharedLibrary.cpp:348 * SharedLibrary not open.
+2022-06-23:11:13:04EDT * 3 * information * 0x298d4e0_Collections * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:13:04EDT * 0 * information * 0x2d938f0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:13:04EDT * 1 * information * 0x2d938f0 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0x298d4e0_0x2d938f0'.
+2022-06-23:11:13:04EDT * 2 * information * 0x298d4e0_0x2d938f0 * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0x2d938f0'.
+2022-06-23:11:13:04EDT * 3 * information * 0x298d4e0_0x2d938f0 * ANNImplementation.cpp:970 * Register argument supportStatus
+2022-06-23:11:13:04EDT * 4 * information * 0x298d4e0_0x2d938f0 * ANNImplementation.cpp:989 * Register callback supportStatus
+2022-06-23:11:15:02EDT * 0 * information * 0x298d4e0_0x2d938f0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:15:02EDT * 0 * information * 0x298d4e0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:17:39EDT * 0 * information * 0xf344e0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:17:39EDT * 1 * information * 0xf344e0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:17:39EDT * 0 * information * 0xf344e0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:17:39EDT * 0 * information * 0xf355d0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:17:39EDT * 1 * information * 0xf355d0 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0xf344e0_Collections'.
+2022-06-23:11:17:39EDT * 2 * information * 0xf344e0_Collections * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0xf355d0'.
+2022-06-23:11:17:39EDT * 1 * warning * 0xf344e0 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(0, 0x7ffcf4e2aab0). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-23:11:17:39EDT * 2 * warning * 0xf344e0 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(1, 0x7ffcf4e2aab0). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-23:11:17:39EDT * 3 * error * 0xf344e0 * KIM_SharedLibrary.cpp:348 * SharedLibrary not open.
+2022-06-23:11:17:39EDT * 3 * information * 0xf344e0_Collections * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:17:39EDT * 0 * information * 0x133a8f0 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:17:39EDT * 1 * information * 0x133a8f0 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0xf344e0_0x133a8f0'.
+2022-06-23:11:17:39EDT * 2 * information * 0xf344e0_0x133a8f0 * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0x133a8f0'.
+2022-06-23:11:17:39EDT * 3 * information * 0xf344e0_0x133a8f0 * ANNImplementation.cpp:970 * Register argument supportStatus
+2022-06-23:11:17:39EDT * 4 * information * 0xf344e0_0x133a8f0 * ANNImplementation.cpp:989 * Register callback supportStatus
+2022-06-23:11:18:30EDT * 0 * information * 0xf344e0_0x133a8f0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:18:30EDT * 0 * information * 0xf344e0 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:18:39EDT * 0 * information * 0xee3470 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:18:39EDT * 1 * information * 0xee3470 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:18:39EDT * 0 * information * 0xee3470 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:18:39EDT * 0 * information * 0xef3d80 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:18:39EDT * 1 * information * 0xef3d80 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0xee3470_Collections'.
+2022-06-23:11:18:39EDT * 2 * information * 0xee3470_Collections * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0xef3d80'.
+2022-06-23:11:18:39EDT * 1 * warning * 0xee3470 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(0, 0x7ffcd01eb530). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-23:11:18:39EDT * 2 * warning * 0xee3470 * KIM_ModelImplementation.cpp:874 * Use of the GetParameterFileName(1, 0x7ffcd01eb530). function is deprecated. Please use GetParameterFileBasename() instead.
+2022-06-23:11:18:39EDT * 3 * error * 0xee3470 * KIM_SharedLibrary.cpp:348 * SharedLibrary not open.
+2022-06-23:11:18:39EDT * 3 * information * 0xee3470_Collections * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:18:39EDT * 0 * information * 0x132e880 * KIM_LogImplementation.cpp:110 * Log object created.  Default verbosity level is 'information'.
+2022-06-23:11:18:39EDT * 1 * information * 0x132e880 * KIM_LogImplementation.cpp:242 * Log object renamed.  ID changed to '0xee3470_0x132e880'.
+2022-06-23:11:18:39EDT * 2 * information * 0xee3470_0x132e880 * KIM_LogImplementation.cpp:246 * Log object renamed.  ID changed from '0x132e880'.
+2022-06-23:11:18:39EDT * 3 * information * 0xee3470_0x132e880 * ANNImplementation.cpp:970 * Register argument supportStatus
+2022-06-23:11:18:39EDT * 4 * information * 0xee3470_0x132e880 * ANNImplementation.cpp:989 * Register callback supportStatus
+2022-06-23:11:18:40EDT * 0 * information * 0xee3470_0x132e880 * KIM_LogImplementation.cpp:120 * Log object destroyed.
+2022-06-23:11:18:40EDT * 0 * information * 0xee3470 * KIM_LogImplementation.cpp:120 * Log object destroyed.
