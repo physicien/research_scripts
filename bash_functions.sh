@@ -179,6 +179,7 @@ load_beDeft() {
   export RSH_COMMAND="/usr/bin/ssh -x"
   export ROOTBEDEFT="/lustre09/project/6004866/bourrete/software/beDeft_package/beDeft/build/src"
   export ORCA_PATH=$EBROOTORCA
+  export PATH="$ORCA_PATH:$PATH"
   set > ORCA_CLEAN_ENV
 }
 
