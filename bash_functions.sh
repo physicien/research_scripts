@@ -170,6 +170,16 @@ print_output_file() {
 # Running functions #
 #####################
 
+# beDeft module load
+load_beDeft() {
+  local ml="StdEnv/2023 gcc/12.3 openmpi/4.1.5"
+  module load $ml 2>/dev/null
+  module load scalapack/2.2.0 2>/dev/null
+  module load orca/6.1.1 2>/dev/null
+  export RSH_COMMAND="/usr/bin/ssh -x"
+  export ROOTBEDEFT="/lustre09/project/6004866/bourrete/software/beDeft_package/beDeft/build/src"
+}
+
 # ORCA module load
 load_orca() {
   local version="$1"
