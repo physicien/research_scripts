@@ -183,6 +183,24 @@ load_beDeft() {
   set > ORCA_CLEAN_ENV
 }
 
+# beDeft running function + timing + output formating
+run_beDeft() {
+  local file="$1"
+  local title="$2"
+  local description="$3"
+  local ti
+  local tf
+
+  trap 'sig_handler_USR1' USR1
+  ti=$(time_now)
+  section_title "$title"
+  printf '%-50s... ' "$description"
+  mpirun -n $SLURM_NTASKS $ROOTBEDEFT/beDeft $file > log_beDeft
+  wait      # wait for signals or end of all background commands
+  tf=$(time_now)
+  printf "done (%7s sec)\n\n" $(time_dif1 $ti $tf)
+}
+
 # ORCA module load
 load_orca() {
   local version="$1"
